@@ -315,7 +315,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: rgba(179, 192, 243, 0.99);
 }
 
 input,
@@ -4933,8 +4933,9 @@ a.list-group-item.active > .badge,
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: inherit;
+  color: #ffce11;
   background-color: #eeeeee;
+  background-image: url(http://weneedfun.com/wp-content/uploads/2015/10/Delicious-Food-Photos-19.jpg)
 }
 
 .jumbotron h1 {

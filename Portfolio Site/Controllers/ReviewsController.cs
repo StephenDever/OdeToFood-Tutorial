@@ -99,7 +99,8 @@ namespace Portfolio_Site.Controllers
                 Model = "Sirrus",
                 Manufacturer = "Specialized",
                 Year = 1991,
-                Rating = 6
+                Rating = 6,
+                Info = "Suntour Accushift group, 7-speed."
             },
             new BicycleReview
             {
@@ -107,7 +108,8 @@ namespace Portfolio_Site.Controllers
                 Model = "912",
                 Manufacturer = "Miyata",
                 Year = 1981,
-                Rating = 8
+                Rating = 8,
+                Info = "Shimano 600 Arabesque group, 6-speed."
             },
             new BicycleReview
             {
@@ -115,7 +117,8 @@ namespace Portfolio_Site.Controllers
                 Model = "Prestige",
                 Manufacturer = "Nishiki",
                 Year = 1986,
-                Rating = 6
+                Rating = 6,
+                Info = "Suntour group 6-speed."
             }
         };
     }

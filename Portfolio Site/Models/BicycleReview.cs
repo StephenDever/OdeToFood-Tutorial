@@ -12,6 +12,7 @@ namespace Portfolio_Site.Models
         public string Manufacturer { get; set; }
         public int Year { get; set; }
         public int Rating { get; set; }
+        public string Info { get; set; }
 
     }
 }

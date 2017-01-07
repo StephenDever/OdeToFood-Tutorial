@@ -19,5 +19,9 @@ Showing @Model.Count() reviews.
         <span>Rating: @item.Rating</span>
         <p>Year: @item.Year</p>
         <p>Info: @item.Info</p>
+
+        <span class="right">
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id})
+        </span>
     </div>
 }

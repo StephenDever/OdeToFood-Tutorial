@@ -1,12 +1,12 @@
-﻿@model IEnumerable<Portfolio_Site.Models.BicycleReview>
+﻿@model IEnumerable<Portfolio_Site.Models.BicycleArchive>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Bicycle Reviews</h2>
+<h2>Bicycle Archive</h2>
 
-Showing @Model.Count() reviews.
+Showing @Model.Count() archives.
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -14,14 +14,14 @@ Showing @Model.Count() reviews.
 
 @foreach (var item in Model)
 {
-    <div class="review">
+    <div class="archive">
         <h4>@item.Manufacturer - @item.Model</h4>
         <span>Rating: @item.Rating</span>
         <p>Year: @item.Year</p>
         <p>Info: @item.Info</p>
 
         <span class="right">
-            @Html.ActionLink("Edit", "Edit", new { id = item.Id})
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id })
         </span>
     </div>
 }

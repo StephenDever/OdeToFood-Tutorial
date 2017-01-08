@@ -7,15 +7,15 @@ using System.Web.Mvc;
 
 namespace Portfolio_Site.Controllers
 {
-    public class ReviewsController : Controller
+    public class ArchivesController : Controller
     {
         // GET: Reviews
         public ActionResult Index()
         {
             var model =
-                from r in _reviews
-                orderby r.Year descending
-                select r;
+                from ex in _examples
+                orderby ex.Year descending
+                select ex;
 
             return View(model);
         }
@@ -51,22 +51,22 @@ namespace Portfolio_Site.Controllers
         // GET: Reviews/Edit/5
         public ActionResult Edit(int id)
         {
-            var review = _reviews.Single(r => r.Id == id);
+            var example = _examples.Single(ex => ex.Id == id);
 
-            return View(review);
+            return View(example);
         }
 
         // POST: Reviews/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
-            var review = _reviews.Single(r => r.Id == id);
-            if (TryUpdateModel(review))
+            var example = _examples.Single(ex => ex.Id == id);
+            if (TryUpdateModel(example))
             {
                 // save to db, once db is created
                 return RedirectToAction("Index");
             }
-            return View(review);
+            return View(example);
         }
 
         // GET: Reviews/Delete/5
@@ -90,9 +90,9 @@ namespace Portfolio_Site.Controllers
                 return View();
             }
         }
-        static List<BicycleReview> _reviews = new List<BicycleReview>
+        static List<BicycleArchive> _examples = new List<BicycleArchive>
         {
-            new BicycleReview
+            new BicycleArchive
             {
                 Id = 1,
                 Model = "Sirrus",
@@ -101,7 +101,7 @@ namespace Portfolio_Site.Controllers
                 Rating = 6,
                 Info = "Suntour Edge group, 7-speed."
             },
-            new BicycleReview
+            new BicycleArchive
             {
                 Id = 2,
                 Model = "912",
@@ -110,7 +110,7 @@ namespace Portfolio_Site.Controllers
                 Rating = 8,
                 Info = "Shimano 600 Arabesque group, 6-speed."
             },
-            new BicycleReview
+            new BicycleArchive
             {
                 Id = 3,
                 Model = "Prestige",

@@ -240,3 +240,9 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/OdeToBikes/Content/bootstrap.min.css
+/OdeToBikes/Scripts/bootstrap.min.js
+/OdeToBikes/Scripts/jquery-1.10.2.min.js
+/OdeToBikes/Scripts/jquery-1.10.2.min.map
+/OdeToBikes/Views/Home/Index.cshtml
+/OdeToBikes/Global.asax

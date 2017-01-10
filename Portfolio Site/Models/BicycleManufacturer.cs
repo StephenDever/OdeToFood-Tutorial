@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Portfolio_Site.Models
 {
-    public class BicycleArchive
+    public class BicycleManufacturer
     {
         public int Id { get; set; }
         public string Model { get; set; }

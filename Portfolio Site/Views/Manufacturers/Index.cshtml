@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Portfolio_Site.Models.BicycleArchive>
+﻿@model IEnumerable<Portfolio_Site.Models.BicycleManufacturer>
 
 @{
     ViewBag.Title = "Index";
@@ -14,7 +14,7 @@ Showing @Model.Count() archives.
 
 @foreach (var item in Model)
 {
-    <div class="archive">
+    <div class="model">
         <h4>@item.Manufacturer - @item.Model</h4>
         <span>Rating: @item.Rating</span>
         <p>Year: @item.Year</p>

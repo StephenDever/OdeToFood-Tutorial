@@ -23,18 +23,18 @@ textarea {
     max-width: 280px;
 }
 
-.archive {
+.model {
     padding: 2px;
     border-bottom: 2px solid black;
     padding-bottom: 10px;
 }
 
-.archive h4 {
+.model h4 {
     color: #3d1356;
     padding: 5px;
     background: #97e8b1;
 }
 
-.archive p {
+.model p {
     font-size: 1em;
 }
